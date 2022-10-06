@@ -1,5 +1,5 @@
 /* RESET */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,55 +7,93 @@
   text-decoration: none;
 }
 
-body{
-  font-family: 'Orbitron', sans-serif;
+body {
+  font-family: "Orbitron", sans-serif;
   height: 100vh;
-  
+  font-size: 16px;
 }
-/* HEADER */
-.top-header{
+/* TOP HEADER */
+.banner {
+  height: 22rem;
+  width: 100%;
+  left: 0;
+  background: url(img/banniere.png) center no-repeat;
+}
+/* NAVBAR */
+.nav-logo {
+  width: 100%;
+  margin-left: 2rem;
+}
+.nav-logo {
+  width: 100%;
+}
+.nav-list :nth-child(1){
+  width: 25%;
+}
+
+.nav-list {
+  padding: 2em 0em 2em 0em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
-  background-image: url(img/banniere.png);
-  background-repeat: no-repeat;
-  background-size:contain;
 }
-.logo{
-  height: 1.5em ;
-}
-/* NAVBAR */
-.navbar{
-  width: 100vw;
-}
-.nav-list{
-  padding: 2em 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color:#1F4393 ;
-  position: relative;
- }
-.nav-item{
+.nav-item {
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
   gap: 2rem;
+  position: relative;
+  border-left: 2px solid #ec1d26;
+  padding: 1em 4em 1em 2em;
 }
-.nav-item a{
+.nav-item a {
   letter-spacing: 1.2px;
-  color: #ffff;
+  color: #1f4393;
+  padding: 0.5em;
 }
-.nav-item a:hover{
-  color: #EC1D26;
+.nav-item a:hover {
+  color: #ec1d26;
+  
 }
 
+/* DROPDOWN */
+.nav-item-drop {
+  position: absolute;
+  background-color: #ffff;
+  width: 12rem;
+  padding: 0.75rem;
+  top: calc(100% + 0.25rem);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 250ms ease-in-out;
+}
+.drop-teams:hover .nav-teams {
+  opacity: 1;
+  visibility: visible;
+}
+.drop-club:hover .nav-club {
+  opacity: 1;
+  visibility: visible;
+}
+.drop-media:hover .nav-media {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.nav-item-drop li {
+  padding-bottom: 0.4rem;
+  font-size: 14px;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 760px) {
-  .nav-links{
+  .nav-links,
+  .search-bar {
     display: none;
   }
-  
 }
