@@ -4,55 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link CSS -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- favicon -->
   <link rel="icon" href="img/favicon.ico">
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- icone search -->
+<link href='https://css.gg/search.css' rel='stylesheet'>
   <title>La Seyne Var Handball</title>
 </head>
 <body>
+  
   <header>
-  <div class="top-header">
-   <div class="banner"></div>
  <div>
     <nav class="navbar">
-      <div class="nav-links">
+      <div class="menu">
            <ul class="nav-list">
-              <li><img class="nav-logo" src="/img/logo.jpg" alt="logo"></li>
+            <div class="logo-container"><a href="index.html"></a><img id="nav-logo" width="100" src="img/logo.jpg" alt="logo">
+            </div>
+            <div>
               <li class="nav-item"><a href="#">Accueil</a></li>
-              <li class="nav-item drop-teams"><a href="#">Equipe ▾</a>
-              <ul class="nav-item-drop nav-teams" >
-                <li><a href="#">Equipe Sénior</a></li>
-                <li><a href=""> Equipe Jeunes</a></li>
+              <li class="nav-item"><a href="#">Equipe ▾</a>
+              <ul class="nav-item-drop " >
+                <li><a href="#">Equipes Séniors</a></li>
+                <li><a href=""> Equipes Jeunes</a></li>
                     </ul>
                   </li>
-              <li class="nav-item drop-club"><a href="#">Le Club ▾</a>
-                <ul class="nav-item-drop nav-club" >
+              <li class="nav-item"><a href="#">Le Club ▾</a>
+                <ul class="nav-item-drop" >
                   <li><a href="#">Le bureau</a></li>
                   <li><a href="#">Agenda</a></li>
                   <li><a href="#">Salles</a></li>
                 </ul>
               </li>
-              <li class="nav-item drop-media"><a href="#">Média ▾</a>
-                <ul class="nav-item-drop nav-media">
+              <li class="nav-item"><a href="#">Média ▾</a>
+                <ul class="nav-item-drop">
                   <li><a href="#">Photos</a></li>
                   <li><a href="#">Vidéos</a></li>               
-                </ul></li>
-              <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+              </li>
+            </div>
+            <div>
+              <div class="search">
+                 <input type="text" placeholder="Votre recherche">
+                 <button type="submit" class="search-button">
+                  <i class="gg-search"></i>
+                </button>
+              </div>
+           </div>
             </ul>
           </div>
-        </nav>
+          </nav>
       </div>
+      
+      </div>
+      <div class="top-header">
+        <div class="banner"></div>
       </header>
-  
   <main>
-    <div id="slider">
-      <img src="" alt="" id="slide">
-      <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-      <div id="suivant" onclick="ChangeSlide(1)">></div>
+    <div class="slider">
+      <img src="/img/bureau.jpg" alt="bureau" class="img__slider active" />
+      <img src="img/equipe_1.jpg" alt="equipe_1" class="img__slider" />
+      <img src="img/rencontre.jpg"img3" class="img__slider" />
+      <div class="suivant">
+          <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="precedent">
+          <i class="fas fa-chevron-circle-left"></i>
+      </div>
   </div>
+  <script src="script.js"></script>
 <section>
     <h1>La Seyne Var Handball</h1>
     <div>
@@ -85,7 +111,7 @@
       <li></li>
     </ul>
   </div>
-  <div class="social-icone">
+  <div class="social-icon">
     <img src="" href="#" alt="facebook">
     <img src="" href="#" alt="Instagram">
     <img src="" href="#" alt="Twitter">

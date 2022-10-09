@@ -10,90 +10,194 @@
 body {
   font-family: "Orbitron", sans-serif;
   height: 100vh;
-  font-size: 16px;
-}
-/* TOP HEADER */
-.banner {
-  height: 22rem;
-  width: 100%;
-  left: 0;
-  background: url(img/banniere.png) center no-repeat;
-}
-/* NAVBAR */
-.nav-logo {
-  width: 100%;
-  margin-left: 2rem;
-}
-.nav-logo {
-  width: 100%;
-}
-.nav-list :nth-child(1){
-  width: 25%;
+  font-size: 18px;
 }
 
-.nav-list {
-  padding: 2em 0em 2em 0em;
+/* TOP HEADER */
+.top-header{
+  height: 15em;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+.banner {
+  background-image: url(/img/banniere.png);
+  height: 100%em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+} 
+
+/* NAVBAR */
+
+.navbar {
+  margin: 0 auto;
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+ul li {
+  list-style: none;
+  margin: 0 3em 0 1em;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
   align-items: center;
 }
-.nav-item {
-  text-transform: uppercase;
-  font-weight: 600;
-  display: inline-block;
-  gap: 2rem;
-  position: relative;
-  border-left: 2px solid #ec1d26;
-  padding: 1em 4em 1em 2em;
+.nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  
 }
-.nav-item a {
-  letter-spacing: 1.2px;
+.menu{
+  width: 100%;
+}
+
+ 
+
+li a {
   color: #1f4393;
-  padding: 0.5em;
 }
-.nav-item a:hover {
+
+li a:hover {
   color: #ec1d26;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
   
 }
 
-/* DROPDOWN */
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+  
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #1f4393;
+  transition: all 0.3s ease;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
 .nav-item-drop {
-  position: absolute;
-  background-color: #ffff;
-  width: 12rem;
-  padding: 0.75rem;
-  top: calc(100% + 0.25rem);
+  text-transform: none;
+}
+.nav-item{
+  border-left: 3px solid #ec1d26;
+  padding:  1em 1em 1em 2em;
+}
+
+#nav-logo{
+  cursor: pointer;
+}
+
+/* SEARCH BUTTON NAVBAR */
+
+input{
+  border: 3px solid #ec1d26;
+  padding: 1em ;
+  border-radius: 5px 0 0 5px;
+ ;
+
+}
+input::placeholder{
+  color: #1f4393;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 15px;
+}
+.search{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  border-radius: 0.25rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: 250ms ease-in-out;
+  justify-content: flex-end;
 }
-.drop-teams:hover .nav-teams {
-  opacity: 1;
-  visibility: visible;
-}
-.drop-club:hover .nav-club {
-  opacity: 1;
-  visibility: visible;
-}
-.drop-media:hover .nav-media {
-  opacity: 1;
-  visibility: visible;
+.search-button{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ec1d26;
+    text-align: center;
+    color: #1f4393;
+    border-radius: 0 5px 5px 0;
+    background-color: #ec1d26;
+    cursor: pointer;
+    font-size:20px;
+    justify-content: center;
+    padding-left: 0.8em;
+  
 }
 
-
-
-.nav-item-drop li {
-  padding-bottom: 0.4rem;
-  font-size: 14px;
+/* SLIDER */
+.slider{
+  height: 50vh;
+  position: relative;
+}
+.slider img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity:0 ;
+  transition: opacity .5s;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 760px) {
-  .nav-links,
-  .search-bar {
-    display: none;
-  }
+.slider img.active{
+opacity: 1;
+}
+
+.suivant, .precedent{
+  color: #1f4393;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.suivant {
+  right:1rem;
+}
+
+.precedent{
+  left: 1rem;
 }
