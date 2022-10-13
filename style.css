@@ -244,6 +244,7 @@ p {
   grid-column-end: 3;
   background-color: #f2f2f2;
   border-radius: 10px;
+  padding: 1em;
 }
 
 .article-2 {
@@ -254,6 +255,7 @@ p {
   background-color: #f2f2f2;
   border-radius: 10px;
   justify-content: center;
+  padding: 1em;
 }
 .next-game {
   grid-row-start: 2;
@@ -289,7 +291,95 @@ p {
 }
 .game-contain {
 }
+/* BLOC PROCHAIN MATCH */
+.nextgame-contain {
+text-align: center;
+background-color: #fff;
+border-radius: 10px;
+padding: 16px;
+margin: 1em;
+}
 
+.nextgame-contain p {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 20px 0 20px 0;
+}
+.current-game{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+.guest, .home{
+  font-size: 0.7em;
+}
+.nextgame-buttons{
+  display: flex;
+  
+}
+.nextgame-buttons > .live-button{
+  width: 50%;
+}
+.live-button{
+  background-color: #1f4393;
+  color: #ec1d26;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-left{
+  margin-right: 8px;
+}
+/* BLOC RESULTAT */
+.result-contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.team-left{
+  text-align: right;
+}
+.team-right{
+  text-align: left;
+}
+.result-contain img{
+  height: 36px;
+  width: 36px;
+  margin: 0 0.8em;
+}
+.score-box{
+  display: flex;
+  padding: 0.3em 0;
+}
+.score-box-left, .score-box-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 40px;
+  height: 45px;
+}
+.score-box-left{
+  background-color: rgba(26,36,52,0.5);
+}
+.score-box-right{
+  background-color: #1a2434;
+}
+.draw{
+  background-color: rgba(26,36,52,0.5);
+}
+.result1, .result2, .result3{
+  margin-bottom: 1em;
+}
 /* NEWSLETTER */
 .homepage-newsletter {
   display: flex;
@@ -324,11 +414,9 @@ p {
   padding: 1em;
 }
 .newsletter-form form {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: 50px;
-  
-  
 }
 .newsletter-form input {
   position: absolute;
@@ -346,18 +434,17 @@ p {
   letter-spacing: 1.1px;
   transition: background 0.35s ease-out;
 }
-input:focus{
+input:focus {
   background-color: #fff;
-  
 }
-input:focus + label{
+input:focus + label {
   color: #ec1d26;
   transform: translateY(-10px) scale(0.8);
 }
-input:focus + button{
+input:focus + button {
   background-color: #fff;
   color: #ec1d26;
-  }
+}
 label {
   position: absolute;
   color: #fff;
@@ -385,7 +472,6 @@ label {
   font-size: 1em;
   cursor: pointer;
   border-left: none;
-  
 }
 
 /* FOOTER */
