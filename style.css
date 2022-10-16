@@ -18,9 +18,14 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.top-header{
+  min-width: 50%;
+  min-height: 25%;
 }
 .banner {
-  object-fit: contain;
+  object-fit: cover;
   margin: auto;
   width: 100%;
 }
@@ -293,8 +298,7 @@ p {
   border-radius: 5px;
   width: 50%;
 }
-.game-contain {
-}
+
 /* BLOC PROCHAIN MATCH */
 .nextgame-contain {
   text-align: center;
