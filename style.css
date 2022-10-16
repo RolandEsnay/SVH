@@ -210,9 +210,14 @@ ul li ul:hover {
   display: none ;
 }
 /* SLIDER */
+.slider-container{
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
 .slider {
   height: 50vh;
   position: relative;
+  
 }
 .slider img {
   object-fit: contain;
@@ -345,8 +350,9 @@ p {
   margin: 0.8em auto;
 }
 .article-contain img {
-  border-radius: 5px;
-  width: 50%;
+  border-radius: 10px;
+  width: 80%;
+  
 }
 
 /* BLOC PROCHAIN MATCH */
@@ -463,7 +469,7 @@ p {
 .actu {
   display: block;
 }
-i.fa.fa-envelope {
+.fa.fa-envelope  {
   color: #ec1d26;
   font-size: 41px;
   padding: 1px 22px;
@@ -510,6 +516,10 @@ i.fa.fa-envelope {
   background-color: #fff;
   color: #ec1d26;
 }
+.newsletter-form input:focus ~ #button{
+  background-color: #fff;
+  color: #ec1d26;
+}
 .newsletter-form label {
   position: absolute;
   color: #fff;
@@ -537,6 +547,7 @@ i.fa.fa-envelope {
   font-size: 1em;
   cursor: pointer;
   border-left: none;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* FOOTER */
