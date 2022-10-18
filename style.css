@@ -39,13 +39,19 @@ header img {
   font-size: 16px;
   letter-spacing: 1.2px;
   padding-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+width: 100%;
+
+
 }
 .menu {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 100px;
-  grid-template-columns: 10% 60% 20%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
   gap: 0px;
   height: 100%;
 }
@@ -672,7 +678,7 @@ p {
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 980px){
-.next-game, .result, .logo-footer, .suivant, .precedent {
+.next-game, .result, .logo-footer, .suivant, .precedent, .top-header, .menu {
   display: none;
 }
 .main-body{
