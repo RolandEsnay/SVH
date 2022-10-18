@@ -70,7 +70,7 @@ width: 100%;
   width: 100px;
 }
 /* NAVBAR */
-.menu-nav {
+.nav-list {
   grid-row-start: 1;
   grid-column-start: 2;
   grid-row-end: 2;
@@ -91,19 +91,19 @@ width: 100%;
   padding: 0;
   width: auto;
 }
-.menu-nav {
+.nav-list {
   width: 100%;
 }
-.menu-nav li a {
+.nav-list li a {
   color: #1f4393;
 }
-.menu-nav li a:hover {
+.nav-list li a:hover {
   color: #ec1d26;
 }
-.menu-nav li:hover {
+.nav-list li:hover {
   cursor: pointer;
 }
-.menu-nav ul li ul {
+.nav-list ul li ul {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -112,7 +112,7 @@ width: 100%;
   display: none;
 }
 
-.menu-nav ul li:hover > ul,
+.nav-list ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -126,7 +126,7 @@ ul li ul:hover {
   border-radius: 5px;
 }
 
-.menu-nav ul li ul li {
+.nav-list ul li ul li {
   clear: both;
   width: 100%;
   text-align: left;
@@ -134,13 +134,13 @@ ul li ul:hover {
   border-style: none;
 }
 
-.menu-nav ul li ul li a:hover {
+.nav-list ul li ul li a:hover {
   padding-left: 10px;
   border-left: 2px solid #1f4393;
   transition: all 0.3s ease;
 }
 
-.menu-nav ul li ul li a {
+.nav-list ul li ul li a {
   transition: all 0.5s ease;
 }
 
@@ -678,12 +678,79 @@ p {
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 980px){
-.next-game, .result, .logo-footer, .suivant, .precedent, .top-header, .menu {
-  display: none;
+  .next-game,
+  .result,
+  .logo-footer,
+  .suivant,
+  .precedent,
+  header,
+  .box
+  
+  
+  {
+    display: none;
+  }
+  .main-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    padding: 0;
+  }
+.navbar .menu-burger{
+  display: block;
 }
-.main-body{
+.navbar .iconSearch{
+  display: block;
+}
+.nav-list{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+ 
+}
+.nav-list ul{
   display: flex;
   flex-direction: column;
-}  
+  align-items: center;
 
 }
+.navbar .nav-list ul li {
+  margin: 25px 0;
+  border: none;
+  
+}
+.mobile-menu{
+  margin-left: 0;
+}
+
+}
+
+/*MENU BURGER*/
+.menu-burger, .iconSearch{
+  display: none;
+  position: absolute;
+  font-size: 35px;
+  color: #1f4393;
+
+}
+
+.menu-burger{
+  top: 30px;
+  right: 50px;
+}
+.iconSearch{
+top: 80px;
+right: 45px;
+}
+
+/* ANIMATION BURGER */

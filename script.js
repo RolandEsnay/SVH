@@ -41,3 +41,11 @@ setInterval(function() {
 }, 5000)
 
 
+// MENU BURGER
+
+const menuHamburger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".nav-list")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
