@@ -832,16 +832,17 @@ padding-right: 0.2em;
   .suivant {
     display: none;
   }
+  .homepage-newsletter{
+    justify-content: space-around ;
+  }
+  .newsletter-form{
+    width: 60%;
+  }
+  .newsletter-contain{
+    display: none;
+  }
 }
-.homepage-newsletter{
-  justify-content: space-around ;
-}
-.newsletter-form{
-  width: 60%;
-}
-.newsletter-contain{
-  display: none;
-}
+
 /* RESOLUTION  580*/
 @media screen and (max-width: 580px) {
   .grid-footer {
