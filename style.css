@@ -607,6 +607,7 @@ padding-right: 0.2em;
 }
 .social-container {
   padding: 1em;
+
 }
 .logo-contain {
   display: flex;
@@ -848,6 +849,8 @@ padding-right: 0.2em;
   .grid-footer {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
   .mention {
     flex-direction: row;
@@ -916,6 +919,7 @@ padding-right: 0.2em;
     top: 0;
   }
   nav .nav-list ul li {
+
     border-bottom: solid 1px #ec1d26;
     border-left: none;
     width: 100%;
@@ -928,6 +932,8 @@ padding-right: 0.2em;
   .mobile-menu {
     margin-left: 0;
   }
+
+  
 }
 /*MENU BURGER*/
 .menu-burger,
