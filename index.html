@@ -30,58 +30,58 @@
   <body>
     <header>
       <div class="top-header">
-        
-          <img src="/img/banniere.png" alt="banner" />
-        
+        <img src="/img/banniere.png" alt="banner" />
       </div>
     </header>
-    <nav class="navbar">
-      <div class="menu">
-        <div class="top-logo-container">
-          <a href="index.html"></a><img id="nav-logo" " src="img/logo.jpg"
-          alt="logo" />
-        </div>
-        <div class="menu-nav">
-          <div class="nav-list">
-            <ul>
-              <li class="nav-item"><a href="#">Accueil</a></li>
-              <li class="nav-item">
-                <a href="#">Equipe ▾</a>
-                <ul class="nav-item-drop">
-                  <li><a href="#">Equipes Séniors</a></li>
-                  <li><a href=""> Equipes Jeunes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#">Le Club ▾</a>
-                <ul class="nav-item-drop">
-                  <li><a href="#">Le bureau</a></li>
-                  <li><a href="#">Agenda</a></li>
-                  <li><a href="#">Salles</a></li>
-                  <li><a href="#">Prochains matchs</a></li>
-                  <li><a href="#">Résultats</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#">Média ▾</a>
-                <ul class="nav-item-drop">
-                  <li><a href="#">Photos</a></li>
-                  <li><a href="#">Vidéos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="#">Le blog</a></li>
+    <nav>
+      <div class="top-logo-container">
+        <a href="index.html"></a><img id="nav-logo" " src="img/logo.jpg"
+        alt="logo" />
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#">Accueil</a></li>
+          <li class="nav-item dropdown" >
+            <a href="#">Equipe ▾</a>
+            <ul class="nav-item-drop" id="equipe">
+              <li><a href="#">Equipes Séniors</a></li>
+              <li><a href=""> Equipes Jeunes</a></li>
             </ul>
-          </div>
+          </li>
+          <li class="nav-item dropdown"id="club">
+            <a href="#">Le Club ▾</a>
+            <ul class="nav-item-drop">
+              <li><a href="#">Le bureau</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Salles</a></li>
+              <li><a href="#">Prochains matchs</a></li>
+              <li><a href="#">Résultats</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="media">
+            <a href="#">Média ▾</a>
+            <ul class="nav-item-drop">
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Vidéos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Le blog</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <input type="checkbox" id="check" />
+        <div class="search-box">
+          <input type="text" name="" placeholder="Votre recherche..." />
+          <label for="check" class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </div>
-        <div class="box">
-          <input type="checkbox" id="check">
-          <div class="search-box">
-            <input type="text" name="" placeholder="Votre recherche..." />
-            <label for="check" class="search-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-          </div>
-        </div>
+      </div>
+      <div class="iconSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="menu-burger" id="burger">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
     <main>
@@ -97,36 +97,42 @@
             <i class="fas fa-chevron-circle-left"></i>
           </div>
         </div>
-        <script src="script.js"></script>
       </div>
       <div class="border"></div>
       <section class="main-body">
         <div class="titre-h1">
           <h1>La Seyne Var Handball</h1>
           <article>
-            <img src="#" alt="" /><p> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Magnam corporis iusto facere voluptate quisquam,
-              excepturi pariatur officiis voluptatum nisi minima exercitationem
-              reiciendis recusandae odit reprehenderit omnis cum sequi ea
-              deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Magnam corporis iusto facere voluptate quisquam, excepturi pariatur
-              officiis voluptatum nisi minima exercitationem reiciendis recusandae
-              odit reprehenderit omnis cum sequi ea deserunt.</p>
-              <p> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Magnam corporis iusto facere voluptate quisquam,
-                excepturi pariatur officiis voluptatum nisi minima exercitationem
-                reiciendis recusandae odit reprehenderit omnis cum sequi ea
-                deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magnam corporis iusto facere voluptate quisquam, excepturi pariatur
-                officiis voluptatum nisi minima exercitationem reiciendis recusandae
-                odit reprehenderit omnis cum sequi ea deserunt.</p>
+            <img src="#" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              corporis iusto facere voluptate quisquam, excepturi pariatur
+              officiis voluptatum nisi minima exercitationem reiciendis
+              recusandae odit reprehenderit omnis cum sequi ea deserunt.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis
+              iusto facere voluptate quisquam, excepturi pariatur officiis
+              voluptatum nisi minima exercitationem reiciendis recusandae odit
+              reprehenderit omnis cum sequi ea deserunt.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              corporis iusto facere voluptate quisquam, excepturi pariatur
+              officiis voluptatum nisi minima exercitationem reiciendis
+              recusandae odit reprehenderit omnis cum sequi ea deserunt.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis
+              iusto facere voluptate quisquam, excepturi pariatur officiis
+              voluptatum nisi minima exercitationem reiciendis recusandae odit
+              reprehenderit omnis cum sequi ea deserunt.
+            </p>
           </article>
         </div>
 
         <div class="article-1">
           <div class="article-contain">
             <h2>Remise des maillots au casino Joa</h2>
-            <center><img src="/img/maillot-equipe1.jpg" alt="equipe1" /></center>
+            <center>
+              <img src="/img/maillot-equipe1.jpg" alt="equipe1" />
+            </center>
             <article>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
@@ -199,13 +205,16 @@
                 </div>
               </div>
               <div class="nextgame-buttons">
-                <a href="#" class="live-button button-left">Live</a>
-                <a
-                  href="https://www.ffhandball.fr/fr/competition/20139#poule-108051"
-                  target="_blank"
-                  class="live-button button-right"
-                  >Classement</a
-                >
+                <div class="live-button button-left">
+                  <a href="#">Live</a>
+                </div>
+                <div class="live-button button-right">
+                  <a
+                    href="https://www.ffhandball.fr/fr/competition/20139#poule-108051"
+                    target="_blank"
+                    >Classement</a
+                  >
+                </div>
               </div>
             </div>
             <div class="nextgame-contain">
@@ -223,13 +232,16 @@
                 </div>
               </div>
               <div class="nextgame-buttons">
-                <a href="#" class="live-button button-left">Live</a>
-                <a
-                  href="https://www.ffhandball.fr/fr/competition/20182#poule-108195"
-                  target="_blank"
-                  class="live-button button-right"
-                  >Classement</a
-                >
+                <div class="live-button button-left">
+                  <a href="#">Live</a>
+                </div>
+                <div class="live-button button-right">
+                  <a
+                    href="https://www.ffhandball.fr/fr/competition/20182#poule-108195"
+                    target="_blank"
+                    >Classement</a
+                  >
+                </div>
               </div>
             </div>
           </section>
@@ -240,7 +252,7 @@
           </div>
           <div class="result1">
             <div class="result-contain">
-              <span class="team-left"> SVH-1 </span>
+              <span class="team-left">SVH-1</span>
               <span class="logo-teamleft">
                 <img class="logo-left" src="img/logo.jpg" alt="logo-svh" />
               </span>
@@ -251,12 +263,12 @@
               <span class="logo-teamright">
                 <img src="/img/gap.png" class="logo-right" alt="logo-gap" />
               </span>
-              <span class="team-right"> Gap HB </span>
+              <span class="team-right">Gap-HB</span>
             </div>
           </div>
           <div class="result2">
             <div class="result-contain">
-              <span class="team-left"> HOSH </span>
+              <span class="team-left">HOSH</span>
               <span class="logo-teamleft">
                 <img class="logo-left" src="img/hyeres.png" alt="logo-hyeres" />
               </span>
@@ -268,55 +280,49 @@
               <span class="logo-teamright">
                 <img src="/img/logo.jpg" class="logo-right" alt="logo-svh" />
               </span>
-              <span class="team-right"> SVH-2 </span>
+              <span class="team-right">SVH-2</span>
             </div>
           </div>
           <div class="result3">
             <div class="result-contain">
-              <span class="team-left"> SVH-3 </span>
+              <span class="team-left">SVH-3</span>
               <span class="logo-teamleft">
                 <img class="logo-left" src="img/logo.jpg" alt="logo-svh" />
               </span>
-
               <div class="score-box">
                 <div class="score-box-left draw">25</div>
                 <div class="score-box-right draw">25</div>
               </div>
               <span class="logo-teamright">
-                <img
-                  src="/img/lagarde.png"
-                  class="logo-right"
-                  alt="logo-lagarde"
-                />
+                <img src="/img/lagarde.png" class="logo-right" alt="logo-lagarde" />
               </span>
-              <span class="team-right"> HBG </span>
+              <span class="team-right">HBG</span>
             </div>
           </div>
         </div>
       </section>
-        <div class="homepage-newsletter">
-          <div class="newsletter-title">
-            <ul>
-              <li>La newsletter</li>
-              <li><i class="fa fa-envelope" aria-hidden="true"></i>du SVH</li>
-            </ul>
-          </div>
-          <div class="newsletter-contain">
-            <ul>
-              <li><i class="fa-solid fa-bullhorn"></i>Actualités</li>
-              <li><i class="fa-solid fa-heart"></i>Coups de coeur</li>
-              <li><i class="fa-solid fa-trophy"></i>Résultats et classement</li>
-            </ul>
-          </div>
-          <div class="newsletter-form">
-            <form>
-              <input type="email" id="email" />
-              <label for="email">Adresse email</label>
-              <button id="button">OK</button>
-            </form>
-          </div>
+      <div class="homepage-newsletter">
+        <div class="newsletter-title">
+          <ul>
+            <li>La newsletter</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>du SVH</li>
+          </ul>
         </div>
-      
+        <div class="newsletter-contain">
+          <ul>
+            <li><i class="fa-solid fa-bullhorn"></i>Actualités</li>
+            <li><i class="fa-solid fa-heart"></i>Coups de coeur</li>
+            <li><i class="fa-solid fa-trophy"></i>Résultats et classement</li>
+          </ul>
+        </div>
+        <div class="newsletter-form">
+          <form>
+            <input type="email" id="email" />
+            <label for="email">Adresse email</label>
+            <button id="button">OK</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="container">
@@ -325,7 +331,6 @@
             <img class="icon-logo" src="/img/logo.jpg" alt="logo" />
           </div>
           <div class="social-icon">
-           
             <div class="social-container">
               <h4>Réseaux sociaux</h4>
               <div class="logo-contain" href="#">
@@ -354,7 +359,6 @@
             </div>
           </div>
           <div class="supporter-footer">
-
             <div class="social-container">
               <h4>Supporter le club</h4>
               <ul>
@@ -365,7 +369,6 @@
             </div>
           </div>
           <div class="partenaire">
-  
             <div class="social-container">
               <h4>Partenaires</h4>
               <ul>
@@ -396,5 +399,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
