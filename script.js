@@ -1,52 +1,116 @@
-let img__slider = document.getElementsByClassName("img__slider");
 
-let etape = 0;
+//  SLIDER //
+const slider = document.querySelector(".slider");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const slides = document.querySelectorAll(".slide");
+const slideIcons = document.querySelectorAll(".slide-icon");
+const numberOfSlides = slides.length;
+var slideNumber = 0;
 
-let nbr__img = img__slider.length;
+// image slider next button
+nextBtn.addEventListener("click",()=>{
+  slides.forEach((slide)=>{
+    slide.classList.remove("active")
+  });
+  slideIcons.forEach((slideIcon)=>{
+    slideIcon.classList.remove("active")
+  });
 
-let precedent = document.querySelector(".precedent");
-let suivant = document.querySelector(".suivant");
+  slideNumber ++;
 
-function enleverActiveImages() {
-  for (let i = 0; i < nbr__img; i++) {
-    img__slider[i].classList.remove("active");
+  if(slideNumber > (numberOfSlides - 1)){
+    slideNumber = 0
   }
+  slides[slideNumber].classList.add("active")
+  slideIcons[slideNumber].classList.add("active")
+
+})
+ //image slider previous button
+ prevBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove("active");
+  });
+
+  slideNumber--;
+
+  if(slideNumber < 0){
+    slideNumber = numberOfSlides - 1;
+  }
+
+  slides[slideNumber].classList.add("active");
+  slideIcons[slideNumber].classList.add("active");
+});
+//image slider autoplay
+var playSlider;
+
+var repeater = () => {
+  playSlider = setInterval(function(){
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active");
+    });
+
+    slideNumber++;
+
+    if(slideNumber > (numberOfSlides - 1)){
+      slideNumber = 0;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  }, 4000);
 }
+repeater();
 
-suivant.addEventListener("click", function () {
-  etape++;
-  if (etape >= nbr__img) {
-    etape = 0;
-  }
-  enleverActiveImages();
-  img__slider[etape].classList.add("active");
+
+//SEARCH BUTTON 
+//<i class="fa fa-times" aria-hidden="true"></i>
+
+let navBar = document.querySelector(".navbar")
+let searchBox = document.querySelector(".search-box .fa-search")
+ 
+searchBox.addEventListener ("click", ()=>{
+  navBar.classList.toggle("showInput");
+  if (navBar.classList.contains("showInput")){
+    searchBox.classList.replace("fa-search","fa-times")
+  } else{
+  searchBox.classList.replace("fa-times","fa-search")}
+})
+
+
+// sidebar open close JS
+let navLinks = document.querySelector(".navbar .nav-links");
+let menuOpenBtn = document.querySelector(".navbar .fa-bars");
+let menuCloseBtn = document.querySelector(".nav-links .fa-times");
+
+menuOpenBtn.addEventListener("click", ()=> {
+navLinks.style.left= "0";
+
 });
+menuCloseBtn.addEventListener("click", ()=> {
+  navLinks.style.left= "-100%";
+  
+  });
+  
+//SCRIPT SUB MENU MOBILE OPEN 
+let equipeArrow = document.querySelector (".equipe-arrow");
 
-precedent.addEventListener("click", function () {
-  etape--;
-  if (etape < 0) {
-    etape = nbr__img - 1;
-  }
-  enleverActiveImages();
-  img__slider[etape].classList.add("active");
-});
+equipeArrow.addEventListener("click", ()=>{
+navLinks.classList.toggle("show1");
+})
+let clubArrow = document.querySelector (".club-arrow");
 
-setInterval(function () {
-  etape++;
-  if (etape >= nbr__img) {
-    etape = 0;
-  }
-  enleverActiveImages();
-  img__slider[etape].classList.add("active");
-}, 5000);
+clubArrow.addEventListener("click", ()=>{
+navLinks.classList.toggle("show2");
+})
+let mediaArrow = document.querySelector (".media-arrow");
 
-// MENU BURGER
-
-const menuHamburger = document.querySelector(".menu-burger");
-const navLinks = document.querySelector(".nav-list");
-
-menuHamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("mobile-menu");
-});
-
-//DROPDOWN MOBILE MENU
+mediaArrow.addEventListener("click", ()=>{
+navLinks.classList.toggle("show3");
+})

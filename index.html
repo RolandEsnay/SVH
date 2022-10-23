@@ -34,70 +34,101 @@
       </div>
     </header>
     <nav>
-      <div class="top-logo-container">
-        <a href="index.html"></a><img id="nav-logo" " src="img/logo.jpg"
-        alt="logo" />
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li class="nav-item"><a href="#">Accueil</a></li>
-          <li class="nav-item dropdown" >
-            <a href="#">Equipe ▾</a>
-            <ul class="nav-item-drop" id="equipe">
-              <li><a href="#">Equipes Séniors</a></li>
-              <li><a href=""> Equipes Jeunes</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"id="club">
-            <a href="#">Le Club ▾</a>
-            <ul class="nav-item-drop">
-              <li><a href="#">Le bureau</a></li>
-              <li><a href="#">Agenda</a></li>
-              <li><a href="#">Salles</a></li>
-              <li><a href="#">Prochains matchs</a></li>
-              <li><a href="#">Résultats</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown" id="media">
-            <a href="#">Média ▾</a>
-            <ul class="nav-item-drop">
-              <li><a href="#">Photos</a></li>
-              <li><a href="#">Vidéos</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a href="#">Le blog</a></li>
-        </ul>
-      </div>
-      <div class="box">
-        <input type="checkbox" id="check" />
-        <div class="search-box">
-          <input type="text" name="" placeholder="Votre recherche..." />
-          <label for="check" class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </label>
+      <div class="navbar">
+        <i class="fa fa-bars" id="bars" aria-hidden="true"></i>
+        <div class="logo">
+          <a href="}"></a> <img src="img/logo.jpg" alt="" />
         </div>
-      </div>
-      <div class="iconSearch">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div class="menu-burger" id="burger">
-        <i class="fa-solid fa-bars"></i>
+        <div class="nav-links">
+          <div class="sidebar-logo" ">
+            <span class="logo_name"id="sidebarLogo" >La Seyne Var HB</span>
+            <i class="fa fa-times" id="croix" aria-hidden="true"></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Accueil</a></li>
+            <li>
+              <a href="#">Equipe</a
+              ><i
+                class="fa fa-chevron-down arrow equipe-arrow"
+                aria-hidden="true"
+              ></i>
+              <ul class="equipe-sub-menu sub-menu">
+                <li><a href="#">Equipes séniors</a></li>
+                <li><a href="#">Equipes jeunes</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Le club</a
+              ><i
+                class="fa fa-chevron-down arrow club-arrow"
+                aria-hidden="true"
+              ></i>
+              <ul class="club-sub-menu sub-menu">
+                <li><a href="#">Le bureau</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Salles</a></li>
+                <li><a href="#">Prochain matchs</a></li>
+                <li><a href="#">Résultats</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Média</a
+              ><i
+                class="fa fa-chevron-down arrow media-arrow"
+                aria-hidden="true"
+              ></i>
+              <ul class="media-sub-menu sub-menu">
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Vidéos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Le blog</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Votre recherche...">
+          </div>
+        </div>
       </div>
     </nav>
     <main>
-      <div class="slider-container">
-        <div class="slider">
-          <img src="/img/bureau.jpg" alt="bureau" class="img__slider active" />
-          <img src="img/equipe_1.jpg" alt="equipe_1" class="img__slider" />
-          <img src="img/maillot.jpg"img3" class="img__slider" />
-          <div class="suivant">
-            <i class="fas fa-chevron-circle-right"></i>
-          </div>
-          <div class="precedent">
-            <i class="fas fa-chevron-circle-left"></i>
-          </div>
+     <!-- SLIDER -->
+     <div class="slider-contain">
+     <div class="slider">
+      <div class="slide active">
+        <img src="/img/maillot-equipe1.jpg" alt="equipe1">
+        <div class="info">
+          <h2>Remise des maillots</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
+      <div class="slide">
+        <img src="/img/maillot.jpg" alt="u13">
+        <div class="info">
+          <h2>Nos U13</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/img/bureau.jpg" alt="bureau">
+        <div class="info">
+          <h2>Présentation du bureau</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+      <div class="navigation">
+        <i class="fa fa-chevron-circle-left prev-btn" aria-hidden="true"></i>
+        <i class="fa fa-chevron-circle-right next-btn" aria-hidden="true"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+     </div>
+    </div>
       <div class="border"></div>
       <section class="main-body">
         <div class="titre-h1">
@@ -294,7 +325,11 @@
                 <div class="score-box-right draw">25</div>
               </div>
               <span class="logo-teamright">
-                <img src="/img/lagarde.png" class="logo-right" alt="logo-lagarde" />
+                <img
+                  src="/img/lagarde.png"
+                  class="logo-right"
+                  alt="logo-lagarde"
+                />
               </span>
               <span class="team-right">HBG</span>
             </div>
