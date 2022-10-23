@@ -192,7 +192,22 @@ nav .navbar .links li:hover .media-sub-menu {
 .navbar .search-box .input-box input::placeholder {
   color: #1f4393;
 }
-
+/* search button */
+.search-btn{
+  position: absolute;
+    right: 10px;
+    top: 12px;
+    z-index: 999;
+    width: 35px;
+    height: 36px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #1f4393;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
 /* SLIDER */
 .slider-contain{
   display: flex;
@@ -567,7 +582,7 @@ p {
   color: #ec1d26;
   transform: translateY(-10px) scale(0.8);
 }
-.newsletter-form input:focus + button {
+.newsletter-form input:focus + #button {
   background-color: #fff;
   color: #ec1d26;
 }
