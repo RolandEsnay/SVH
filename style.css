@@ -329,7 +329,7 @@ p {
   height: 100%;
 }
 
-.titre-h1 {
+.history {
   margin-top: 1em;
   padding: 2em 1em 0 1em;
   grid-row-start: 1;
@@ -748,6 +748,9 @@ p {
     position: fixed;
     top: 0;
     left: 0;}
+    .slider-contain{
+      margin-top: 100px;
+    }
   .main-body {
     display: flex;
     flex-direction: column;
@@ -950,7 +953,16 @@ p {
     display: none;
   }
 }
-
+/* RESOLUTION 615px */
+@media screen and (max-width: 615px) {
+.slider-contain{
+  display: none;
+  
+}
+.history{
+  margin-top: 100px;
+}
+}
 /* RESOLUTION  580*/
 @media screen and (max-width: 580px) {
   .grid-footer {
