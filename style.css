@@ -349,7 +349,11 @@ p {
   margin: 0 1em 0 1em;
   height: 100%;
 }
-
+.main-body img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+ }
 .history {
   margin-top: 1em;
   padding: 2em 1em 0 1em;
@@ -422,6 +426,9 @@ p {
   text-align: center;
   font-size: 0.9em;
   margin: 20px 0 20px 0;
+}
+.next-game .current-game img{
+  width: 55px;
 }
 .current-game {
   display: flex;
@@ -1009,6 +1016,9 @@ p {
   .slider .slide .info p {
     font-size: 0.8em;
   }
+  .mention {
+    padding: 13px 0 25px 0;
+  }
 }
 /* SMARTPHONE */
 @media screen and (max-width: 510px) {
@@ -1021,5 +1031,10 @@ p {
   }
   nav .navbar .nav-links {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .mention {
+    font-size: 9px;
   }
 }
