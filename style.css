@@ -358,10 +358,11 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 .history {
   margin-top: 1em;
-  padding: 2em 1em 0 1em;
+  padding: 2em 1em;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 2;
@@ -390,7 +391,7 @@ p {
   background-color: #fafafa;
   border-radius: 10px;
   justify-content: center;
-  padding: 0 1em;
+  padding: 0 1em 2em 1em;
   width: 100%;
 }
 .next-game {
@@ -416,6 +417,7 @@ p {
 .article-contain img {
   border-radius: 10px;
   width: 60%;
+  margin-bottom: 20px;
 }
 
 /* BLOC PROCHAIN MATCH */
@@ -523,7 +525,7 @@ p {
 .homepage-newsletter {
   background-color: #fafafa;
   border-radius: 10px;
-  margin: 0.8em auto;
+  margin: 1.2em auto;
   width: 70%;
   height: 100px;
   display: flex;
