@@ -312,7 +312,7 @@ nav .navbar .links li:hover .media-sub-menu {
   background: #ec1d26;
 }
 /* titre */
-.logo-h1{
+.logo-h1 {
   width: 150px;
 }
 h1 {
@@ -351,11 +351,11 @@ p {
   margin: 0 1em 0 1em;
   height: 100%;
 }
-.main-body img{
+.main-body img {
   display: block;
   margin-left: auto;
-  margin-right: auto
- }
+  margin-right: auto;
+}
 .history {
   margin-top: 1em;
   padding: 2em 1em 0 1em;
@@ -422,14 +422,16 @@ p {
   border-radius: 10px;
   padding: 16px;
   margin: 1em;
+  box-shadow: 0 5px 25px rgb(1 1 1/ 15%)
 }
 
 .nextgame-contain p {
   text-align: center;
   font-size: 0.9em;
   margin: 20px 0 20px 0;
+
 }
-.next-game .current-game img{
+.next-game .current-game img {
   width: 55px;
 }
 .current-game {
@@ -471,40 +473,39 @@ p {
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  margin: 5px;
+  margin: 5px 5px 10px 5px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   height: 50px;
+  box-shadow: 0 5px 25px rgb(1 1 1/ 15%)
 }
-.team-left {
-  text-align: right;
-  font-size: 0.75em;
+.result-left,
+.result-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9rem;
+  width: 50%;
+  gap: 2px;
 }
-.team-right {
-  text-align: left;
-  font-size: 0.75em;
+.result-left {
+  margin-right: 1em;
 }
+
 .result-contain img {
   height: 36px;
   width: 36px;
 }
-.score-box {
-  display: flex;
-  padding: 0.3em 0;
-  height: 100%;
-  width: 15%;
-  gap: 3px;
-}
+
 .score-box-left,
 .score-box-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   border-radius: 4px;
-  width: 100%;
+  width: 30px;
+  height: 30px;
   font-size: 0.938em;
-  padding: 0.2rem;
+  text-align: center;
+  line-height: 2em;
 }
 .score-box-left {
   background-color: rgba(26, 36, 52, 0.5);
@@ -515,11 +516,11 @@ p {
 .draw {
   background-color: rgba(26, 36, 52, 0.5);
 }
-.result1,
-.result2,
-.result3 {
+
+.result {
   margin-bottom: 1em;
 }
+
 /* NEWSLETTER */
 .homepage-newsletter {
   background-color: #fafafa;
@@ -535,6 +536,15 @@ p {
   text-transform: uppercase;
   font-size: 0.875em;
   padding: 1em;
+  box-shadow: 0 5px 25px rgb(1 1 1/ 15%)
+}
+#icon-newsletter{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+#icon-newsletter span{
+  padding: 0.5em;
 }
 .newsletter-contain li {
   padding-bottom: 0.5em;
@@ -635,12 +645,12 @@ p {
   cursor: pointer;
   border-left: none;
   font-family: "Orbitron", sans-serif;
-  transition: background 0.60s ease-out
+  transition: background 0.6s ease-out;
 }
-.newsletter-form p{
+.newsletter-form p {
   position: relative;
   top: -10px;
-  left:0;
+  left: 0;
   text-transform: uppercase;
   text-align: center;
 }
@@ -846,6 +856,10 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .score-box-left,
+  .score-box-right {
+    width: 55px;
+  }
 }
 /* RESOLUTION 950 */
 @media screen and (max-width: 950px) {
@@ -1041,6 +1055,15 @@ p {
   }
   nav .navbar .nav-links {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .team-left,
+  .team-right {
+    font-size: 0.6em;
+  }
+  .result-left {
+    margin-right: 0.3em;
   }
 }
 @media screen and (max-width: 360px) {
