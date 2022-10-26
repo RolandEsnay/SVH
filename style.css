@@ -10,7 +10,7 @@
 body {
   font-family: "Orbitron", sans-serif;
   height: 100vh;
-  font-size: 18px;
+  font-size: 1.125;
   margin: 0 1em;
 }
 
@@ -125,7 +125,7 @@ nav .navbar .links li:hover .media-sub-menu {
 }
 .navbar .links li .sub-menu a {
   color: #1f4393;
-  font-size: 15px;
+  font-size: 0.938em;
   text-transform: none;
 }
 .navbar .links li .sub-menu a:hover {
@@ -194,7 +194,7 @@ nav .navbar .links li:hover .media-sub-menu {
   border: none;
   border-radius: 4px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Orbitron", sans-serif;
   color: #1f4393;
 }
@@ -312,7 +312,9 @@ nav .navbar .links li:hover .media-sub-menu {
   background: #ec1d26;
 }
 /* titre */
-
+.logo-h1{
+  width: 150px;
+}
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -476,11 +478,11 @@ p {
 }
 .team-left {
   text-align: right;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 .team-right {
   text-align: left;
-  font-size: 14px;
+  font-size: 0.75em;
 }
 .result-contain img {
   height: 36px;
@@ -490,6 +492,8 @@ p {
   display: flex;
   padding: 0.3em 0;
   height: 100%;
+  width: 15%;
+  gap: 3px;
 }
 .score-box-left,
 .score-box-right {
@@ -497,11 +501,9 @@ p {
   justify-content: center;
   align-items: center;
   color: #fff;
-  border-radius: 5px;
-  margin-right: 5px;
+  border-radius: 4px;
   width: 100%;
-
-  font-size: 15px;
+  font-size: 0.938em;
   padding: 0.2rem;
 }
 .score-box-left {
@@ -531,7 +533,7 @@ p {
   background-color: #1f4393;
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 1em;
 }
 .newsletter-contain li {
@@ -589,6 +591,7 @@ p {
   letter-spacing: 1.1px;
   transition: background 0.35s ease-out;
 }
+
 .newsletter-form input:focus {
   background-color: #fff;
 }
@@ -632,8 +635,15 @@ p {
   cursor: pointer;
   border-left: none;
   font-family: "Orbitron", sans-serif;
+  transition: background 0.60s ease-out
 }
-
+.newsletter-form p{
+  position: relative;
+  top: -10px;
+  left:0;
+  text-transform: uppercase;
+  text-align: center;
+}
 /* FOOTER */
 
 .container {
@@ -675,7 +685,7 @@ p {
 .logo-contain {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 0.938em;
 }
 
 .facebook,
@@ -716,7 +726,7 @@ p {
   grid-column-end: 6;
   display: flex;
   justify-content: center;
-  font-size: 12px;
+  font-size: 0.75em;
   border-top: solid 1.5px #1f4393;
   padding: 13px 15px 25px;
   color: #1f4393;
@@ -756,7 +766,7 @@ p {
 
 @media screen and (max-width: 1080px) {
   .live-button {
-    font-size: 16px;
+    font-size: 1em;
   }
   .homepage-newsletter {
     width: 100%;
@@ -850,7 +860,7 @@ p {
     backdrop-filter: blur(7px);
     padding: 20px;
     line-height: 40px;
-    font-size: 14px;
+    font-size: 0.875em;
     transition: all 0.5s ease;
     z-index: 100;
   }
@@ -867,12 +877,12 @@ p {
   .nav-links .sidebar-logo .logo_name,
   .nav-links .sidebar-logo .fa-times {
     color: #1f4393;
-    font-size: 18px;
+    font-size: 1.125em;
   }
 
   .navbar .fa-bars {
     color: #1f4393;
-    font-size: 25px;
+    font-size: 1.563em;
   }
   nav .navbar .nav-links .links {
     display: block;
@@ -1035,6 +1045,6 @@ p {
 }
 @media screen and (max-width: 360px) {
   .mention {
-    font-size: 9px;
+    font-size: 0.563em;
   }
 }
