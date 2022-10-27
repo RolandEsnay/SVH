@@ -114,3 +114,4 @@ let mediaArrow = document.querySelector (".media-arrow");
 mediaArrow.addEventListener("click", ()=>{
 navLinks.classList.toggle("show3");
 })
+
