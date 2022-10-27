@@ -265,7 +265,7 @@ nav .navbar .links li:hover .media-sub-menu {
   font-weight: 400;
   color: #fafafa;
 }
-#slide-title{
+#slide-title1, #slide-title2, #slide-title3{
   font-size: 1.3em;
   font-weight: 800;
   text-align: left;
