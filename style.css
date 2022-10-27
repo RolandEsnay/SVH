@@ -259,16 +259,20 @@ nav .navbar .links li:hover .media-sub-menu {
   border-radius: 7px;
   box-shadow: 0 5px 25px rgb(1 1 1/ 5%);
 }
-.slider .slide .info h2 {
-  font-size: 1.3em;
-  font-weight: 800;
-  text-align: left;
-}
+
 .slider .slide .info p {
   font-size: 0.8em;
   font-weight: 400;
   color: #fafafa;
 }
+#slide-title{
+  font-size: 1.3em;
+  font-weight: 800;
+  text-align: left;
+  color: #ec1d26;
+  text-decoration: underline #1f4393;
+  padding: 0.5em;
+  }
 .navigation {
   height: 500px;
   display: flex;
@@ -339,6 +343,8 @@ h3{
 p {
   text-align: justify;
 }
+
+
 /* border */
 .border {
   border-top: 2px solid #1f4393;
