@@ -115,3 +115,20 @@ mediaArrow.addEventListener("click", ()=>{
 navLinks.classList.toggle("show3");
 })
 
+// Fixed navbar
+
+let navbar = document.getElementById("nav-bar");
+let mainNav = document.getElementById("main-nav")
+let navPos = navbar.getBoundingClientRect().top;
+
+window.addEventListener("scroll", e => {
+  let viewportHeight = window.innerHeight;
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    mainNav.classList.add('sticky');
+
+  } else {
+   mainNav.classList.remove('sticky');
+
+  }
+});
