@@ -1041,6 +1041,9 @@ p {
   .social-sticky {
     display: none;
   }
+  .article-contain img{
+    width: 100%;
+  }
 }
 .nav-links .sidebar-logo .logo_name,
 .nav-links .sidebar-logo .fa-times,

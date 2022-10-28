@@ -116,7 +116,7 @@ let navbar = document.getElementById("nav-bar");
 let mainNav = document.getElementById("main-nav");
 let navPos = navbar.getBoundingClientRect().top;
 
-window.addEventListener("scroll", (e) => {
+window.addEventListener("scroll", () => {
   let viewportHeight = window.innerHeight;
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
