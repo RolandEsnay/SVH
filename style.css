@@ -410,7 +410,7 @@ p {
   border-top: 2px solid #1f4393;
   margin-top: 1em;
 }
-/* MAIN BODY */
+/* CONTENU PRINCIPAL */
 .main-body {
   display: grid;
   justify-content: center;
@@ -639,7 +639,7 @@ p {
   padding-right: 0.2em;
 }
 
-/* FORM NEWSLETTER */
+/* BLOC NEWSLETTER */
 .newsletter-form {
   width: 40%;
   padding: 1em;
