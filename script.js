@@ -114,6 +114,7 @@ mediaArrow.addEventListener("click", () => {
 
 let navbar = document.getElementById("nav-bar");
 let mainNav = document.getElementById("main-nav");
+
 let navPos = navbar.getBoundingClientRect().top;
 
 window.addEventListener("scroll", () => {
