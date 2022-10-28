@@ -711,6 +711,7 @@ p {
   border-left: none;
   font-family: "Orbitron", sans-serif;
   transition: background 0.6s ease-out;
+  border-bottom: none;
 }
 .newsletter-form p {
   position: relative;
